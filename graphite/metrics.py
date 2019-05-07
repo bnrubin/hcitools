@@ -21,6 +21,7 @@ status_map = {'closing': 1,
               'opening': 1,
               'up': 1}
 
+sites = ['prodsite', 'prodclinical']
 
 def send_site(site):
     env = os.environ.copy()
@@ -60,7 +61,7 @@ def send_site(site):
 def main():
     # create local.env by running `printenv > /home/hci/temp/local.env` from your regular login shell
     dotenv.load_dotenv('/home/hci/temp/local.env')
-    sites = ['prodsite', 'prodclinical']
+    
 
     for site in sites:
         send_site(site)
