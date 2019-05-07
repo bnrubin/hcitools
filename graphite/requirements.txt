@@ -1,0 +1,2 @@
+graphitesend==0.7.0
+python-dotenv==0.6.0
